@@ -1,0 +1,125 @@
+/* BANNER */
+
+.slider {
+	position: relative;
+
+	&_mini {
+		position: absolute;
+		left: 5%;
+		border-radius: 6px;
+		height: 350px;
+		top: calc(50% - 175px);
+		z-index: 1;
+		overflow: hidden;
+
+		@include mq-down(sm) {
+			width: 90%;
+			background-color: rgba(52, 73, 92, .5);
+			color: #fff;
+		}
+
+		@include mq-up(md) {
+			width: 450px;
+			background-color: #fff;
+
+			&:before {
+				display: block;
+				content: "";
+				width: 100%;
+				height: 100%;
+				border: 30px solid #fff;
+				position: absolute;
+				z-index: 2;
+				pointer-events: none;
+			}
+		}
+
+		&__btn {
+			width: calc(100% - 100px);
+			position: absolute;
+			bottom: 60px;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.slick-slider,
+		.slick-list,
+		.slick-track {
+			height: 100%;
+		}
+
+		.slick-slide {
+			padding: 30px;
+			position: relative;
+		}
+
+		.slick-dots {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 48px;
+			height: 0;
+
+			button {
+				display: none;
+			}
+
+			li {
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #d6d6d6;
+
+				&:hover,
+				&.slick-active {
+					background-color: #869791;
+				}
+
+				+ li {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+
+	&__img {
+		display: block;
+		object-fit: cover;
+		object-position: center 80%;
+		font-family: 'object-fit: cover; object-position: center 80%;';
+		width: 100%;
+		height: 300px;
+
+		@media screen and (min-height: 480px) {
+			height: 420px;
+		}
+
+		@media screen and (min-height: 900px) {
+			height: 642px;
+		}
+	}
+
+	&__title {
+		font-weight: lighter;
+		margin-bottom: 15px;
+
+		@include mq-down(sm) {
+			font-size: 24px;
+		}
+
+		@include mq-up(md) {
+			font-size: 44px;
+		}
+	}
+
+	&__text {
+		font-weight: lighter;
+
+		@include mq-down(sm) {
+			font-size: 16px;
+		}
+	}
+}

@@ -1,0 +1,83 @@
+/* HEADER */
+
+.header {
+	padding-left: ($grid-gutter-width / 2);
+	padding-right: ($grid-gutter-width / 2);
+	background-color: $color-dark-blue;
+	color: #fff;
+	@include clearfix;
+
+	@include mq-up(md) {
+		top: 96px;
+		position: fixed;
+		width: 100%;
+		transition: top .35s ease 0s;
+		z-index: 2;
+	}
+
+	&__lang {
+		float: left;
+		position: relative;
+		z-index: 1;
+
+		@include mq-down(sm) {
+			width: calc(50% + 15px);
+			margin-left: -15px;
+			background-color: $color-darken-blue;
+		}
+
+		@include mq-between(md, lg) {
+			margin-left: 58px;
+		}
+	}
+
+	&__city {
+		float: left;
+		position: relative;
+		z-index: 1;
+
+		@include mq-down(sm) {
+			width: calc(50% + 15px);
+			margin-right: -15px;
+			background-color: $color-darken-blue;
+			margin-bottom: 58px;
+		}
+	}
+
+	&__nav {
+		@include mq-down(sm) {
+			width: 100%;
+			float: left;
+			height: $nav-height;
+			margin-top: -58px;
+
+			&.affix {
+				position: fixed;
+				top: 58px;
+				left: 0;
+				padding-left: 15px;
+				padding-right: 15px;
+				width: 100%;
+				background-color: $color-dark-blue;
+				z-index: 2;
+			}
+		}
+	}
+
+	+ * {
+		@include mq-up(md) {
+			margin-top: 154px;
+		}
+	}
+}
+
+@include mq-up(md) {
+	.alert-region:not(.in) + .header {
+		top: 0;
+	}
+
+	.alert-region:not(.in) + .header + * {
+		margin-top: 58px;
+		transition: margin-top .35s ease 0s;
+	}
+}

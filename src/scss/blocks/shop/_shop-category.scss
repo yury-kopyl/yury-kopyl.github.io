@@ -1,0 +1,136 @@
+/* SHOP-CATEGORY */
+
+.shop-category {
+	$this: &;
+
+	background-color: #d1dfea;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	&_child13 #{$this}__item {
+		@include mq-up(xl) {
+			width: (100% / 13);
+		}
+	}
+
+	&_child10 #{$this}__item {
+		@include mq-up(xl) {
+			width: (100% / 10);
+		}
+	}
+
+	&__table {
+		@include mq-up(xl) {
+			display: table;
+		}
+
+		@include mq-down(lg) {
+			width: 100%;
+		}
+	}
+
+	&__item {
+		text-align: center;
+
+		&_active #{$this}__link,
+		&_active #{$this}__link:hover,
+		&_active #{$this}__ico:after {
+			color: $color-red;
+		}
+
+		@include mq-up(xl) {
+			display: table-cell;
+			vertical-align: top;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		font-weight: 300;
+
+		@include mq-down(sm) {
+			font-size: 12px;
+		}
+
+		@include mq-only(md) {
+			font-size: 14px;
+		}
+	}
+
+	&__ico {
+		display: block;
+
+		&:after {
+			content: "";
+			display: inline-block;
+			width: 72px;
+			height: 45px;
+			margin-bottom: 15px;
+			font-size: 39px;
+			color: #718a9c;
+			overflow: hidden;
+		}
+
+		&_all {
+			@include icon('cat_all');
+		}
+
+		&_motiv {
+			@include icon('cat_motiv');
+		}
+
+		&_business {
+			@include icon('cat_business');
+		}
+
+		&_health {
+			@include icon('cat_health');
+		}
+
+		&_beauty {
+			@include icon('cat_beauty');
+		}
+
+		&_eco {
+			@include icon('cat_eco');
+		}
+
+		&_relation {
+			@include icon('cat_relation');
+		}
+
+		&_lifestyle {
+			@include icon('cat_lifestyle');
+		}
+
+		&_authors {
+			@include icon('cat_authors');
+		}
+
+		&_attr {
+			@include icon('basket-phys');
+
+			&:after {
+				font-size: 100px;
+				line-height: 19px;
+				text-indent: -32px;
+			}
+		}
+
+		&_tv {
+			@include icon('cat_tv');
+		}
+
+		&_favorite {
+			@include icon('cat_favorite');
+		}
+
+		&_amway {
+			@include icon('cat_amway');
+
+			&:after {
+				text-indent: -10px;
+			}
+		}
+	}
+}

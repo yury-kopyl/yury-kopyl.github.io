@@ -1,0 +1,33 @@
+/* COPYRIGHT */
+
+@import "../../icons/sprite";
+
+.copyright {
+	background-color: $color-dark-blue;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 23px;
+
+	@include mq-down(sm) {
+		text-align: center;
+	}
+
+	&__aright {
+		@include mq-down(sm) {
+			margin-top: 10px;
+		}
+
+		@include mq-up(md) {
+			text-align: right;
+		}
+	}
+
+	&__logo {
+		@include sprite($footer-logo);
+		display: inline-block;
+		vertical-align: top;
+	}
+}

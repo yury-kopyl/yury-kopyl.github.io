@@ -1,0 +1,15 @@
+/* LOGO */
+
+.logo {
+	&__link {
+		display: block;
+		line-height: 58px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&__img {
+		display: inline-block;
+		vertical-align: -4px;
+	}
+}

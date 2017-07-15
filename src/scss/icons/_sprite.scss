@@ -1,0 +1,233 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$app-store-name: 'app-store';
+$app-store-x: 104px;
+$app-store-y: 45px;
+$app-store-offset-x: -104px;
+$app-store-offset-y: -45px;
+$app-store-width: 150px;
+$app-store-height: 44px;
+$app-store-total-width: 254px;
+$app-store-total-height: 151px;
+$app-store-image: '../img/sprite_flags_24x16.png';
+$app-store: (104px, 45px, -104px, -45px, 150px, 44px, 254px, 151px, '../img/sprite_flags_24x16.png', 'app-store', );
+$choosecity-reset-name: 'choosecity-reset';
+$choosecity-reset-x: 0px;
+$choosecity-reset-y: 127px;
+$choosecity-reset-offset-x: 0px;
+$choosecity-reset-offset-y: -127px;
+$choosecity-reset-width: 24px;
+$choosecity-reset-height: 24px;
+$choosecity-reset-total-width: 254px;
+$choosecity-reset-total-height: 151px;
+$choosecity-reset-image: '../img/sprite_flags_24x16.png';
+$choosecity-reset: (0px, 127px, 0px, -127px, 24px, 24px, 254px, 151px, '../img/sprite_flags_24x16.png', 'choosecity-reset', );
+$choosecity-submit-name: 'choosecity-submit';
+$choosecity-submit-x: 24px;
+$choosecity-submit-y: 127px;
+$choosecity-submit-offset-x: -24px;
+$choosecity-submit-offset-y: -127px;
+$choosecity-submit-width: 24px;
+$choosecity-submit-height: 24px;
+$choosecity-submit-total-width: 254px;
+$choosecity-submit-total-height: 151px;
+$choosecity-submit-image: '../img/sprite_flags_24x16.png';
+$choosecity-submit: (24px, 127px, -24px, -127px, 24px, 24px, 254px, 151px, '../img/sprite_flags_24x16.png', 'choosecity-submit', );
+$flag-at-name: 'flag-at';
+$flag-at-x: 196px;
+$flag-at-y: 104px;
+$flag-at-offset-x: -196px;
+$flag-at-offset-y: -104px;
+$flag-at-width: 24px;
+$flag-at-height: 16px;
+$flag-at-total-width: 254px;
+$flag-at-total-height: 151px;
+$flag-at-image: '../img/sprite_flags_24x16.png';
+$flag-at: (196px, 104px, -196px, -104px, 24px, 16px, 254px, 151px, '../img/sprite_flags_24x16.png', 'flag-at', );
+$flag-ca-name: 'flag-ca';
+$flag-ca-x: 220px;
+$flag-ca-y: 104px;
+$flag-ca-offset-x: -220px;
+$flag-ca-offset-y: -104px;
+$flag-ca-width: 24px;
+$flag-ca-height: 16px;
+$flag-ca-total-width: 254px;
+$flag-ca-total-height: 151px;
+$flag-ca-image: '../img/sprite_flags_24x16.png';
+$flag-ca: (220px, 104px, -220px, -104px, 24px, 16px, 254px, 151px, '../img/sprite_flags_24x16.png', 'flag-ca', );
+$flag-de-name: 'flag-de';
+$flag-de-x: 96px;
+$flag-de-y: 127px;
+$flag-de-offset-x: -96px;
+$flag-de-offset-y: -127px;
+$flag-de-width: 24px;
+$flag-de-height: 16px;
+$flag-de-total-width: 254px;
+$flag-de-total-height: 151px;
+$flag-de-image: '../img/sprite_flags_24x16.png';
+$flag-de: (96px, 127px, -96px, -127px, 24px, 16px, 254px, 151px, '../img/sprite_flags_24x16.png', 'flag-de', );
+$flag-kz-name: 'flag-kz';
+$flag-kz-x: 120px;
+$flag-kz-y: 127px;
+$flag-kz-offset-x: -120px;
+$flag-kz-offset-y: -127px;
+$flag-kz-width: 24px;
+$flag-kz-height: 16px;
+$flag-kz-total-width: 254px;
+$flag-kz-total-height: 151px;
+$flag-kz-image: '../img/sprite_flags_24x16.png';
+$flag-kz: (120px, 127px, -120px, -127px, 24px, 16px, 254px, 151px, '../img/sprite_flags_24x16.png', 'flag-kz', );
+$flag-om-name: 'flag-om';
+$flag-om-x: 144px;
+$flag-om-y: 127px;
+$flag-om-offset-x: -144px;
+$flag-om-offset-y: -127px;
+$flag-om-width: 24px;
+$flag-om-height: 16px;
+$flag-om-total-width: 254px;
+$flag-om-total-height: 151px;
+$flag-om-image: '../img/sprite_flags_24x16.png';
+$flag-om: (144px, 127px, -144px, -127px, 24px, 16px, 254px, 151px, '../img/sprite_flags_24x16.png', 'flag-om', );
+$flag-ru-name: 'flag-ru';
+$flag-ru-x: 172px;
+$flag-ru-y: 104px;
+$flag-ru-offset-x: -172px;
+$flag-ru-offset-y: -104px;
+$flag-ru-width: 24px;
+$flag-ru-height: 16px;
+$flag-ru-total-width: 254px;
+$flag-ru-total-height: 151px;
+$flag-ru-image: '../img/sprite_flags_24x16.png';
+$flag-ru: (172px, 104px, -172px, -104px, 24px, 16px, 254px, 151px, '../img/sprite_flags_24x16.png', 'flag-ru', );
+$flag-ua-name: 'flag-ua';
+$flag-ua-x: 48px;
+$flag-ua-y: 127px;
+$flag-ua-offset-x: -48px;
+$flag-ua-offset-y: -127px;
+$flag-ua-width: 24px;
+$flag-ua-height: 16px;
+$flag-ua-total-width: 254px;
+$flag-ua-total-height: 151px;
+$flag-ua-image: '../img/sprite_flags_24x16.png';
+$flag-ua: (48px, 127px, -48px, -127px, 24px, 16px, 254px, 151px, '../img/sprite_flags_24x16.png', 'flag-ua', );
+$flag-us-name: 'flag-us';
+$flag-us-x: 72px;
+$flag-us-y: 127px;
+$flag-us-offset-x: -72px;
+$flag-us-offset-y: -127px;
+$flag-us-width: 24px;
+$flag-us-height: 16px;
+$flag-us-total-width: 254px;
+$flag-us-total-height: 151px;
+$flag-us-image: '../img/sprite_flags_24x16.png';
+$flag-us: (72px, 127px, -72px, -127px, 24px, 16px, 254px, 151px, '../img/sprite_flags_24x16.png', 'flag-us', );
+$footer-logo-name: 'footer__logo';
+$footer-logo-x: 0px;
+$footer-logo-y: 104px;
+$footer-logo-offset-x: 0px;
+$footer-logo-offset-y: -104px;
+$footer-logo-width: 172px;
+$footer-logo-height: 23px;
+$footer-logo-total-width: 254px;
+$footer-logo-total-height: 151px;
+$footer-logo-image: '../img/sprite_flags_24x16.png';
+$footer-logo: (0px, 104px, 0px, -104px, 172px, 23px, 254px, 151px, '../img/sprite_flags_24x16.png', 'footer__logo', );
+$google-play-name: 'google-play';
+$google-play-x: 104px;
+$google-play-y: 0px;
+$google-play-offset-x: -104px;
+$google-play-offset-y: 0px;
+$google-play-width: 150px;
+$google-play-height: 45px;
+$google-play-total-width: 254px;
+$google-play-total-height: 151px;
+$google-play-image: '../img/sprite_flags_24x16.png';
+$google-play: (104px, 0px, -104px, 0px, 150px, 45px, 254px, 151px, '../img/sprite_flags_24x16.png', 'google-play', );
+$promo-logo-name: 'promo__logo';
+$promo-logo-x: 0px;
+$promo-logo-y: 0px;
+$promo-logo-offset-x: 0px;
+$promo-logo-offset-y: 0px;
+$promo-logo-width: 104px;
+$promo-logo-height: 104px;
+$promo-logo-total-width: 254px;
+$promo-logo-total-height: 151px;
+$promo-logo-image: '../img/sprite_flags_24x16.png';
+$promo-logo: (0px, 0px, 0px, 0px, 104px, 104px, 254px, 151px, '../img/sprite_flags_24x16.png', 'promo__logo', );
+$spritesheet-width: 254px;
+$spritesheet-height: 151px;
+$spritesheet-image: '../img/sprite_flags_24x16.png';
+$spritesheet-sprites: ($app-store, $choosecity-reset, $choosecity-submit, $flag-at, $flag-ca, $flag-de, $flag-kz, $flag-om, $flag-ru, $flag-ua, $flag-us, $footer-logo, $google-play, $promo-logo, );
+$spritesheet: (254px, 151px, '../img/sprite_flags_24x16.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

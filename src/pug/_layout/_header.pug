@@ -1,0 +1,90 @@
+- var regions = ['UA', 'RU', 'DE', 'KZ', 'AT', 'CA', 'US', 'Other']
+- var userNav = ['CMS Upline24 3.0', 'Мои покупки', 'Мои мероприятия', 'Мои партнеры', 'Мои видео']
+- var langs = [{abbr: 'RU', title: 'Русский'}, {abbr: 'EN', title: 'English'}]
+
+//- todo добавить класс к блоку ниже
+//-.in
+#alertRegion.alert-region.collapse
+	p.alert-region__cloud Вы действительно находитесь в Днепропетровске?
+		a.alert-region__link(href="#alertRegion" aria-controls="alertRegion" role="button" data-toggle="collapse" aria-expanded="false") - Да, все верно
+		a.alert-region__link(href="#chooseCity" data-toggle="modal" role="button" data-target="#chooseCity") - Нет, сменить регион
+
+header.header
+	.header__lang
+		.dropdown.lang
+			a#lang.lang__link-active(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+				span.lang__ico.i-lang.i-lang_ua
+				span.lang__name UA
+				span.caret
+			ul.dropdown-menu.dropdown-lang(aria-labelledby="lang")
+				each region in regions
+					li
+						a.lang__link(href="#region_" + region)
+							span.lang__ico.i-lang(class="i-lang_" + region.toLowerCase())
+							span.lang__name= region
+	.header__city.city
+		a.city__link(href="#chooseCity" data-toggle="modal" role="button" data-target="#chooseCity")
+			span.city__ico
+			span.city__name Днепропетровск
+	.header__nav.nav
+		a#nav.nav__button(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+			span.nav__button-hr
+			span.nav__button-hr
+			span.nav__button-hr
+		.nav__logo.logo
+			a.logo__link(href="/")
+				img.logo__img(src="img/logo.png" alt="Diamond Alliance")
+		ul.nav__menu.menu.dropdown(aria-labelledby="nav")
+			li.menu__item
+				a.menu__link.menu__link_active(href="my-events.html") Мероприятия
+					span.badge 1
+			li.menu__item
+				a.menu__link(href="shop.html") Магазин
+					span.badge 10
+			li.menu__item
+				a.menu__link(href="video.html") Медиа
+					span.badge 5
+			li.menu__item
+				a.menu__link(href="video.html") Курсы
+					span.badge 3
+		ul.nav__user.user.dropdown(aria-labelledby="nav")
+			li.user__item
+				a.user__search(href="#search" data-toggle="modal" role="button" data-target="#search")
+			li.user__item
+				a.user__callback(href="#callback" data-toggle="modal" role="button" data-target="#callback")
+			li.user__item
+				a.user__basket(href="#basket" aria-controls="basket" role="button" data-toggle="collapse" aria-expanded="false")
+			li.user__item.user__item_person.dropdown(hidden)
+				a#person.user__person(href="#" data-toggle="dropdown")
+					span.user__person-ico
+					| Сергей петров
+					span.caret
+				ul.person.js-person(aria-labelledby="person")
+					each navItem in userNav
+						li.person__item
+							a.person__link(href="#")= navItem
+					li.person__item
+						a.person__link.person__link_logout(href="#") Выйти
+					li.person__item.person__item_header Дней подписки: 2 475
+						br
+						a.person__btn(href="#") Продлить подписку
+			li.user__item.user__item_config.dropdown
+				a#config.user__person(href="#" data-toggle="dropdown")
+					span.user__config-ico
+					| Настройки
+					span.caret
+				ul.person.js-person(aria-labelledby="person")
+					li.person__item.person__item_empty Выбор языка:
+					li.person__item
+						a.person__link(href="#") RU
+							span.person__link-blue Русский
+					li.person__item
+						a.person__link(href="#") EN
+							span.person__link-blue English
+
+			li.user__item
+				a.user__register(href="/registration.html") Регистрация
+			li.user__item
+				a.user__auth(href="#" data-toggle="modal" role="button" data-target="#auth") Войти
+
+	include _basket

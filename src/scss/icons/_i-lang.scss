@@ -1,0 +1,42 @@
+/* I-LANG */
+
+@import "../icons/sprite";
+
+.i-lang {
+	display: inline-block;
+	vertical-align: middle;
+
+	@include sprite($flag-ru);
+
+	&_ua {
+		@include sprite-position($flag-ua);
+	}
+
+	&_ru {
+		@include sprite-position($flag-ru);
+	}
+
+	&_de {
+		@include sprite-position($flag-de);
+	}
+
+	&_kz {
+		@include sprite-position($flag-kz);
+	}
+
+	&_at {
+		@include sprite-position($flag-at);
+	}
+
+	&_ca {
+		@include sprite-position($flag-ca);
+	}
+
+	&_om {
+		@include sprite-position($flag-om);
+	}
+
+	&_us {
+		@include sprite-position($flag-us);
+	}
+}

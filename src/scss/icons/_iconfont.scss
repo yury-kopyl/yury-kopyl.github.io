@@ -1,0 +1,278 @@
+@font-face {
+	font-family: "da";
+	src: url('../fonts/da/da.eot');
+	src: url('../fonts/da/da.eot?#iefix') format('eot'),
+	url('../fonts/da/da.woff2') format('woff2'),
+	url('../fonts/da/da.woff') format('woff'),
+	url('../fonts/da/da.ttf') format('truetype'),
+	url('../fonts/da/da.svg#da') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "da";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == attention {
+	$char: "\E001";
+}
+	@if $filename == auth-fb {
+	$char: "\E002";
+}
+	@if $filename == auth-vk {
+	$char: "\E003";
+}
+	@if $filename == auth-yandex {
+	$char: "\E004";
+}
+	@if $filename == basket-audio {
+	$char: "\E005";
+}
+	@if $filename == basket-book {
+	$char: "\E006";
+}
+	@if $filename == basket-disc {
+	$char: "\E007";
+}
+	@if $filename == basket-phys {
+	$char: "\E008";
+}
+	@if $filename == callback {
+	$char: "\E009";
+}
+	@if $filename == card-author {
+	$char: "\E00A";
+}
+	@if $filename == card-favorite {
+	$char: "\E00B";
+}
+	@if $filename == card-locked {
+	$char: "\E00C";
+}
+	@if $filename == card-time {
+	$char: "\E00D";
+}
+	@if $filename == card-view {
+	$char: "\E00E";
+}
+	@if $filename == cart {
+	$char: "\E00F";
+}
+	@if $filename == cat_all {
+	$char: "\E010";
+}
+	@if $filename == cat_amway {
+	$char: "\E011";
+}
+	@if $filename == cat_authors {
+	$char: "\E012";
+}
+	@if $filename == cat_beauty {
+	$char: "\E013";
+}
+	@if $filename == cat_business {
+	$char: "\E014";
+}
+	@if $filename == cat_eco {
+	$char: "\E015";
+}
+	@if $filename == cat_favorite {
+	$char: "\E016";
+}
+	@if $filename == cat_health {
+	$char: "\E017";
+}
+	@if $filename == cat_lifestyle {
+	$char: "\E018";
+}
+	@if $filename == cat_motiv {
+	$char: "\E019";
+}
+	@if $filename == cat_relation {
+	$char: "\E01A";
+}
+	@if $filename == cat_tv {
+	$char: "\E01B";
+}
+	@if $filename == config {
+	$char: "\E01C";
+}
+	@if $filename == film {
+	$char: "\E01D";
+}
+	@if $filename == location {
+	$char: "\E01E";
+}
+	@if $filename == peoples {
+	$char: "\E01F";
+}
+	@if $filename == reg-calendar {
+	$char: "\E020";
+}
+	@if $filename == reg-disc {
+	$char: "\E021";
+}
+	@if $filename == search {
+	$char: "\E022";
+}
+	@if $filename == soc-fb {
+	$char: "\E023";
+}
+	@if $filename == soc-vk {
+	$char: "\E024";
+}
+	@if $filename == sound {
+	$char: "\E025";
+}
+	@if $filename == success {
+	$char: "\E026";
+}
+	@if $filename == user {
+	$char: "\E027";
+}
+
+@return $char;
+}
+
+@mixin icon($filename, $insert: after, $extend: true) {
+&:#{$insert} {
+	@if $extend {
+		@extend %icon;
+	} @else {
+		@include icon-styles;
+	}
+	content: icon-char($filename);
+}
+}
+
+.icon-attention {
+	@include icon(attention);
+}
+.icon-auth-fb {
+	@include icon(auth-fb);
+}
+.icon-auth-vk {
+	@include icon(auth-vk);
+}
+.icon-auth-yandex {
+	@include icon(auth-yandex);
+}
+.icon-basket-audio {
+	@include icon(basket-audio);
+}
+.icon-basket-book {
+	@include icon(basket-book);
+}
+.icon-basket-disc {
+	@include icon(basket-disc);
+}
+.icon-basket-phys {
+	@include icon(basket-phys);
+}
+.icon-callback {
+	@include icon(callback);
+}
+.icon-card-author {
+	@include icon(card-author);
+}
+.icon-card-favorite {
+	@include icon(card-favorite);
+}
+.icon-card-locked {
+	@include icon(card-locked);
+}
+.icon-card-time {
+	@include icon(card-time);
+}
+.icon-card-view {
+	@include icon(card-view);
+}
+.icon-cart {
+	@include icon(cart);
+}
+.icon-cat_all {
+	@include icon(cat_all);
+}
+.icon-cat_amway {
+	@include icon(cat_amway);
+}
+.icon-cat_authors {
+	@include icon(cat_authors);
+}
+.icon-cat_beauty {
+	@include icon(cat_beauty);
+}
+.icon-cat_business {
+	@include icon(cat_business);
+}
+.icon-cat_eco {
+	@include icon(cat_eco);
+}
+.icon-cat_favorite {
+	@include icon(cat_favorite);
+}
+.icon-cat_health {
+	@include icon(cat_health);
+}
+.icon-cat_lifestyle {
+	@include icon(cat_lifestyle);
+}
+.icon-cat_motiv {
+	@include icon(cat_motiv);
+}
+.icon-cat_relation {
+	@include icon(cat_relation);
+}
+.icon-cat_tv {
+	@include icon(cat_tv);
+}
+.icon-config {
+	@include icon(config);
+}
+.icon-film {
+	@include icon(film);
+}
+.icon-location {
+	@include icon(location);
+}
+.icon-peoples {
+	@include icon(peoples);
+}
+.icon-reg-calendar {
+	@include icon(reg-calendar);
+}
+.icon-reg-disc {
+	@include icon(reg-disc);
+}
+.icon-search {
+	@include icon(search);
+}
+.icon-soc-fb {
+	@include icon(soc-fb);
+}
+.icon-soc-vk {
+	@include icon(soc-vk);
+}
+.icon-sound {
+	@include icon(sound);
+}
+.icon-success {
+	@include icon(success);
+}
+.icon-user {
+	@include icon(user);
+}

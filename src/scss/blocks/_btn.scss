@@ -1,0 +1,91 @@
+/* BTN */
+
+.btn {
+	$this: &;
+
+	border-radius: 4px;
+	font-size: 16px;
+	transition: all .2s ease 0s;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
+	vertical-align: top;
+
+	&__link {
+		border: none;
+		height: 44px;
+		line-height: 44px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	&_success {
+		color: #fff;
+		background-color: $color-green;
+		border: none;
+		height: 44px;
+		line-height: 43px;
+		padding-left: 25px;
+		padding-right: 25px;
+		border-bottom: 1px solid darken($color-green, 20);
+
+		&:hover {
+			background-color: lighten($color-green, 5);
+			color: #fff;
+			border-bottom-width: 0;
+			line-height: 44px;
+		}
+	}
+
+	&_primary-outer {
+		color: $color-blue;
+		background-color: transparent;
+		border: 2px solid;
+		line-height: 36px;
+		padding-left: 55px;
+		padding-right: 55px;
+		font-size: 16px;
+	}
+
+	&_primary {
+		color: #fff;
+		background-color: $color-blue;
+		border: none;
+		height: 44px;
+		line-height: 43px;
+		padding-left: 25px;
+		padding-right: 25px;
+		border-bottom: 1px solid darken($color-blue, 20);
+
+		&:hover {
+			background-color: lighten($color-blue, 5);
+			color: #fff;
+			border-bottom-width: 0;
+			line-height: 44px;
+		}
+	}
+
+	&_shadow {
+		box-shadow: 0 10px 10px rgba(0, 1, 0, .21);
+		line-height: 40px;
+
+		&#{$this}_success {
+			border-bottom: 3px solid darken($color-green, 20);
+		}
+
+		&#{$this}_primary {
+			border-bottom: 3px solid darken($color-blue, 20);
+		}
+
+		&:hover {
+			box-shadow: none;
+			border-bottom-width: 0;
+			line-height: 44px;
+		}
+	}
+
+	&_lg {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}

@@ -1,0 +1,19 @@
+/* COLLAPSE */
+
+.collapse {
+	display: none;
+
+	&.in{
+		display: block;
+	}
+	// [converter] extracted tr&.in to tr.collapse.in
+	// [converter] extracted tbody&.in to tbody.collapse.in
+}
+
+.collapsing {
+	height: 0;
+	overflow: hidden;
+	transition-property: height, visibility;
+	transition-duration: .35s;
+	transition-timing-function: ease;
+}

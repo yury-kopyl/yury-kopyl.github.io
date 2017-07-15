@@ -1,0 +1,282 @@
+{
+	"main_new": [
+		{
+			"img": "http://storage.dalife.info/images/video/small/1127-1060-0-jamajo2.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "audio",
+			"price": "125",
+			"cardType": "new",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": true,
+			"carousel": true
+		},{
+			"img": "http://storage.dalife.info/images/video/small/1127-1060-0-jamajo2.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "video",
+			"price": "225",
+			"cardType": "new",
+			"time": "12:00",
+			"views": 250,
+			"favorites": 76,
+			"access": true,
+			"viewed": false,
+			"carousel": true
+		},
+		{
+			"img": "http://storage.dalife.info/images/video/small/1127-1060-0-jamajo2.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "video",
+			"price": "105",
+			"cardType": "new",
+			"time": "7:00",
+			"views": 231,
+			"favorites": 65,
+			"access": true,
+			"viewed": false,
+			"carousel": true
+		},
+		{
+			"img": "http://storage.dalife.info/images/video/small/744-00-rejku.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "micro",
+			"price": "125",
+			"cardType": "new",
+			"time": "4:00",
+			"views": 5,
+			"favorites": 0,
+			"access": false,
+			"viewed": false,
+			"carousel": true
+		},
+		{
+			"img": "http://storage.dalife.info/images/video/small/1127-1060-0-jamajo2.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "micro",
+			"price": "125",
+			"cardType": "new",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": false,
+			"carousel": true
+		},
+		{
+			"img": "http://storage.dalife.info/images/video/small/636-00-kkeep.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "audio",
+			"price": "125",
+			"cardType": "new",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": false,
+			"carousel": true
+		},
+		{
+			"img": "http://storage.dalife.info/images/video/small/1127-1060-0-jamajo2.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "video",
+			"price": "125",
+			"cardType": "new",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": false,
+			"carousel": true
+		},
+		{
+			"img": "http://storage.dalife.info/images/video/small/1127-1060-0-jamajo2.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "video",
+			"price": "125",
+			"cardType": "new",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": false,
+			"carousel": true
+		}
+	],
+
+	"main_shop": [
+		{
+			"img": "http://dalife.info/images/shop/403-00001pozzozoz.png",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "disc",
+			"price": "125",
+			"cardType": "shop",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": true,
+			"buy": "buyCount",
+			"carousel": true
+		},{
+			"img": "http://dalife.info/images/shop/418-0-shafas.png",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "book",
+			"price": "225",
+			"cardType": "shop",
+			"time": "12:00",
+			"views": 250,
+			"favorites": 76,
+			"access": true,
+			"viewed": false,
+			"buy": "buy",
+			"carousel": true
+		},
+		{
+			"img": "http://dalife.info/images/shop/187-DA_euro_club.png",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "audio",
+			"price": "105",
+			"cardType": "shop",
+			"time": "7:00",
+			"views": 231,
+			"favorites": 65,
+			"access": true,
+			"viewed": false,
+			"buy": "checkout",
+			"carousel": true
+		},
+		{
+			"img": "http://dalife.info/images/shop/342-FOR_DA.png",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "phys",
+			"price": "125",
+			"cardType": "shop",
+			"time": "4:00",
+			"views": 5,
+			"favorites": 0,
+			"access": false,
+			"viewed": false,
+			"buy": "buy",
+			"carousel": true
+		},
+		{
+			"img": "http://dalife.info/images/shop/339-326-07.png",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "audio",
+			"price": "125",
+			"cardType": "shop",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": false,
+			"buy": "buyCount",
+			"carousel": true
+		},
+		{
+			"img": "http://storage.dalife.info/images/video/small/636-00-kkeep.jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "audio",
+			"price": "125",
+			"cardType": "shop",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": false,
+			"buy": "buy",
+			"carousel": true
+		},
+		{
+			"img": "http://dalife.info/images/shop/339-326-07.png",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "book",
+			"price": "125",
+			"cardType": "shop",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": false,
+			"buy": "follow",
+			"carousel": true
+		},
+		{
+			"img": "http://dalife.info/images/shop/485-1(1).jpg",
+			"name": "Искусство коммуникации, мечеглататель",
+			"type": "disc",
+			"price": "125",
+			"cardType": "shop",
+			"time": "4:00",
+			"views": 113,
+			"favorites": 17,
+			"access": true,
+			"viewed": false,
+			"buy": "buy",
+			"carousel": true
+		}
+	],
+
+	"owlBanner": [
+		{
+			"src320": "resource/main_slider/main_desktop_1x320.jpg",
+			"src768": "resource/main_slider/main_desktop_1x768.jpg",
+			"src": "resource/main_slider/main_desktop_1.jpg"
+		},
+		{
+			"src320": "resource/main_slider/main_desktop_2x320.jpg",
+			"src768": "resource/main_slider/main_desktop_2x768.jpg",
+			"src": "resource/main_slider/main_desktop_2.jpg"
+		},
+		{
+			"src320": "resource/main_slider/main_desktop_3x320.jpg",
+			"src768": "resource/main_slider/main_desktop_3x768.jpg",
+			"src": "resource/main_slider/main_desktop_3.jpg"
+		}
+	],
+
+	"owlMiniBanner": [
+		{
+			"title": "Ментальная алхимия",
+			"text": "Новая книга «Мечта» Марши Видер"
+		},
+		{
+			"title": "Клиенты на всю жизнь",
+			"text": "Впервые на русском языке: новая книга об эффективных действиях на пути к успеху от бизнес-гуру Бодо Шефера"
+		},
+		{
+			"title": "Успей продлить по старым ценам!",
+			"text": "Новая книга «Мечта» Марши Видер"
+		}
+	],
+
+	"shopBanner": [
+		{
+			"src": "/resource/shop_slider/shop-carusel-1.jpg",
+			"author": "Клименко Александр",
+			"info": "Видеоурок: Совет для трудных времен, проверка текста, если длинный текст делаем троеточие"
+		},
+		{
+			"src": "/resource/shop_slider/shop-carusel-2.jpg",
+			"author": "Клименко Александр",
+			"info": "Аудиосеминар: Прими вызов и стань первым"
+		},
+		{
+			"src": "/resource/shop_slider/shop-carusel-3.jpg",
+			"author": "Наталья Ена",
+			"info": "Аудиосеминар: 12 простых навыков для будущего лидера"
+		},
+		{
+			"src": "/resource/shop_slider/shop-carusel-4.jpg",
+			"author": "Наталья Ена",
+			"info": "Аудиосеминар: 12 простых навыков для будущего лидера"
+		},
+		{
+			"src": "/resource/shop_slider/shop-carusel-5.jpg",
+			"author": "Наталья Ена",
+			"info": "Аудиосеминар: 12 простых навыков для будущего лидера"
+		}
+	]
+}

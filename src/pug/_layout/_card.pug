@@ -1,0 +1,42 @@
+.card(class=!item.carousel ? "card_adaptive" : "")
+	.card__img-wrap
+		a(href="#")
+			img.card__img(src=item.img class=item.viewed && item.cardType === "new" ? 'card__img_viewed' : '')
+			if item.cardType === "new"
+				span.card__title.card__title_fixed= item.name
+				span.card__time= item.time
+				if item.viewed
+					span.card__viewed Просмотрено
+				if !item.access
+					span.card__locked
+		a.card__info(href="#") Брайан Трейси - один из самых известных спикеров и мотивационных ораторов в области коммуникации, педагогики и личностного роста.
+	.card__main-wrap
+		a.card__title(href="#" class=item.cardType === "new" ? "card__title_mob" : "") Искусство коммуникации, мечеглататель
+		.card__author-box
+			a.card__author(href="")
+				span.card__author-ico
+				| Брайан Трейси
+		//if item.cardType === "new"
+		.card__ico-box
+			span.card__ico.card__ico_views= item.views
+			span.card__ico.card__ico_favorites= item.favorites
+			span.card__ico.card__ico_category(class="card__ico_category-" + item.type)
+			//span.card__ico.card__ico_category.card__ico_category-audio
+			//span.card__ico.card__ico_category.card__ico_category-micro
+		if item.cardType === "shop"
+			.card__price-box
+				//span.card__ico.card__ico_disc
+				//span.card__ico.card__ico_audio
+				//span.card__ico.card__ico_book
+				span.card__ico(class="card__ico_" + item.type)
+				span.card__price 125 UAH
+			.card__btn-box
+				if item.buy === "checkout"
+					a.card__btn.card__btn_checkout(href="#") Оформить заказ
+				if item.buy === "buy"
+					a.card__btn.card__btn_buy(href="#") Купить
+				if item.buy === "follow"
+					a.card__btn.card__btn_follow(href="#") Перейти
+				if item.buy === 'buyCount'
+					input.card__input(type="number" min="1" placeholder="Кол-во")
+					a.btn.btn_success.card__btn.card__btn_buy-half(href="#") Купить

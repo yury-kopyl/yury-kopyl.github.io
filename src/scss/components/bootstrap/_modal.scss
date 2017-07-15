@@ -1,0 +1,156 @@
+/* MODAL */
+
+@import "../../icons/sprite";
+
+.modal {
+	$this: &;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: none;
+	background-color: rgba(43, 60, 77, .88);
+	color: #fff;
+
+	&__header {
+		background-color: $color-dark-blue;
+		padding: 25px 0;
+		position: fixed;
+		width: 100%;
+		transition: transform .3s ease-out;
+		transform: translate(0,-25%);
+		z-index: 1;
+
+		&_hidden {
+			display: none;
+
+			+ #{$this}__dialog {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&__container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	&__dialog {
+		margin-top: 82px;
+		transition: transform .3s ease-out;
+		transform: translate(0,-25%);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__h {
+		font-weight: bold;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 5px;
+	}
+
+	&__col {
+		margin-bottom: 25px;
+	}
+
+	&__col-md-0 {
+		@include mq-up(lg) {
+			display: none;
+		}
+	}
+
+	&__item {
+		margin-bottom: 15px;
+	}
+
+	&__link {
+		@extend %white-link;
+		font-size: 16px;
+		display: block;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__info {
+		font-size: 12px;
+		font-style: italic;
+		display: block;
+	}
+
+	&__input {
+		border: none;
+		border-bottom: 1px solid $color-gray;
+		background-color: transparent;
+		height: 35px;
+		padding: 0 50px 0 0;
+		color: #fff;
+		font-size: 24px;
+		max-width: calc(100% - 40px);
+	}
+
+	&__submit,
+	&__reset {
+		background-color: transparent;
+		border: none;
+		position: relative;
+		top: -9px;
+
+		@include mq-down(xs) {
+			display: none;
+		}
+	}
+
+	&__submit {
+		@include sprite($choosecity-submit);
+		margin-left: -54px;
+	}
+
+	&__reset {
+		@include sprite($choosecity-reset);
+	}
+
+	&__close {
+		@extend %white-link;
+		width: 30px;
+		height: 30px;
+		border: 1px solid;
+		border-radius: 50%;
+		display: block;
+		float: right;
+		text-align: center;
+		line-height: 28px;
+		margin-top: 4px;
+		font-size: 24px;
+	}
+
+	&.fade {
+		opacity: 0;
+		transition: opacity .15s linear;
+
+		&.in {
+			opacity: 1;
+		}
+	}
+
+	&.in {
+		#{$this}__dialog {
+			transform: translate(0, 0);
+		}
+
+		#{$this}__header {
+			transform: translate(0, 0);
+		}
+	}
+}
+
+.modal-open {
+	overflow: hidden;
+}

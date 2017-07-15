@@ -1,0 +1,96 @@
+/* MAIN-SECTION */
+
+.main-section {
+
+	&_bg {
+		background-color: #fff;
+	}
+
+	&__title {
+		margin-bottom: 50px;
+		margin-top: 50px;
+		font-size: 24px;
+		font-weight: 300;
+		@include clearfix;
+
+		@include mq-down(sm) {
+			text-align: center;
+		}
+
+		&_with-btn {
+			line-height: 40px;
+		}
+	}
+
+	&__btn {
+		@include mq-up(md) {
+			float: right;
+		}
+
+		@include mq-down(sm) {
+			margin-top: 20px;
+		}
+	}
+
+	&__right {
+		float: right;
+
+		@include mq-down(md) {
+			margin-top: 40px;
+		}
+
+		@include mq-up(md) {
+			text-align: center;
+		}
+	}
+
+	&__btn_mt {
+		margin-top: 30px;
+	}
+
+	&__ico {
+		color: $base-link-color;
+		font-size: 60px;
+
+		@include mq-only(sm) {
+			position: relative;
+			top: -15px;
+		}
+
+		&_sound {
+			@include icon('sound')
+		}
+
+		&_film {
+			@include icon('film')
+		}
+
+		&_peoples {
+			@include icon('peoples')
+		}
+	}
+
+	&__count {
+		font-size: 32px;
+
+		@include mq-down(xs) {
+			margin-top: 15px;
+		}
+
+		@include mq-down(sm) {
+			padding: 0;
+		}
+
+		@include mq-up(md) {
+			margin: 50px 0 40px;
+		}
+	}
+
+	&__col4 {
+		@include mq-down(sm) {
+			& + & {
+				margin-top: 50px;
+			}
+		}
+	}
+}

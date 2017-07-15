@@ -1,0 +1,14 @@
+#callback.modal.fade(role="dialog" aria-labelledby="callbackLabel")
+	.modal__header.modal__header_hidden
+	.modal__dialog
+		.modal__container.g-container
+			.callback
+				.callback__cell
+					form.form.callback__form
+						.g-h3.callback__h1 Форма обратной связи
+							a.callback__close(href="#callback" data-dismiss="modal" aria-label="Close") &times;
+						input.form__input(type="text" name="email" placeholder="Электронная почта")
+						input.form__input(type="text" name="name" placeholder="Имя")
+						textarea.form__textarea(name="text" placeholder="Сообщение" rows="5")
+						.form__submit-box.form__submit-box_center
+							button.btn.btn_success.btn_shadow(type="submit") Отправить

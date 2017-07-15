@@ -1,0 +1,44 @@
+#chooseCity.modal.fade(role="dialog" aria-labelledby="chooseCityLabel")
+	.modal__header
+		.g-container
+			form.modal__form(method="get")
+				input.modal__input(type='text' placeholder='Укажите город')
+				button.modal__submit(type="submit")
+				button.modal__reset(type="reset")
+				a.modal__close(href="#" data-dismiss="modal" aria-label="Close") &times;
+	.modal__dialog
+		.modal__container.g-container
+			.g-row
+				.g-col-12.g-col-sm-6.g-col-md-6.g-col-lg-3.modal__col
+					.modal__h A
+					- for (x = 0; x < 20; x++)
+						.modal__item
+							a.modal__link(href='#') Александровка
+								span.modal__info (Винницкая область, Тростянецкий район)
+				.g-col-12.g-col-sm-6.g-col-md-6.g-col-lg-3.modal__col
+					.modal__h Б
+					- for (x = 0; x < 10; x++)
+						.modal__item
+							a.modal__link(href='#') Басовка
+								span.modal__info (Львовская область, Пустомытовский район)
+				.g-col-sm-12.modal__col-md-0
+				.g-col-12.g-col-sm-6.g-col-md-6.g-col-lg-3.modal__col
+					.modal__h В
+					- for (x = 0; x < 15; x++)
+						.modal__item
+							a.modal__link(href='#') Васильевка
+								span.modal__info (Винницкая область, Тульчинский район)
+				.g-col-12.g-col-sm-6.g-col-md-6.g-col-lg-3.modal__col
+					.modal__h Г
+					- for (x = 0; x < 8; x++)
+						.modal__item
+							a.modal__link(href='#') Васильевка
+								span.modal__info (Винницкая область, Литинский район)
+				// Через каждых 4 блока с классом .g-col-xs-12.g-col-md-3 выводить пустой блок с классом .g-col-12
+				.g-col-12
+				.g-col-12.g-col-sm-6.g-col-md-6.g-col-lg-3.modal__col
+					.modal__h Г
+					- for (x = 0; x < 8; x++)
+						.modal__item
+							a.modal__link(href='#') Васильевка
+								span.modal__info (Винницкая область, Литинский район)

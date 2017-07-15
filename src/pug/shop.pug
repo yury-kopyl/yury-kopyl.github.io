@@ -1,0 +1,93 @@
+extends _layout/_template
+
+block content
+	.shop-slider
+		- var data = shopBanner;
+		.js-shop-slider
+			each item in data
+				div
+					include _layout/_shop-slider
+			each item in data
+				div
+					include _layout/_shop-slider
+
+	.shop-category.shop-category_child13
+		.g-container.shop-category__table.js-shop-category
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_all
+					|Все
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_motiv
+					|Мотивация
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_business
+					|Бизнес
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_health
+					|Здоровье
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_beauty
+					|Красота
+			.shop-category__item.shop-category__item_active
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_eco
+					|Экология и дом
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_relation
+					|Отношения
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_lifestyle
+					|Стиль жизни
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_authors
+					|Авторы
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_attr
+					|Атрибутика
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_tv
+					|Diamond TV
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_favorite
+					|Избранное
+			.shop-category__item
+				a.shop-category__link(href="#")
+					span.shop-category__ico.shop-category__ico_amway
+					|Amway
+
+	.g-container.shop-inputs
+		.g-row.form
+			.g-col-12.g-col-xl-6
+				input.shop-inputs__search.form__input.js-shop-input(type="search" placeholder="Быстрый поиск" value="")
+			.g-col-12.g-col-md-6.g-col-xl-3.shop-inputs__sort
+				select.js-shop-sort(name="sort")
+					option(value="") По дате
+					option(value="") По рейтингу
+					option(value="") По просмотрам
+			.g-col-12.g-col-md-6.g-col-xl-3
+				select.js-shop-authors(name="authors")
+					option(value="") Рон Дженсон
+					option(value="") Дьюк Джонсон
+					option(value="") Рич ДеВос
+
+	.shop-section
+		.section.g-container
+			.g-row
+				- for (x = 0; x < 12; x++)
+					- var item = main_shop[0];
+					- item.carousel = false;
+					.g-col-12.g-col-md-6.g-col-lg-4.g-col-xl-3.g-col-xxl-2.card-col
+						include _layout/_card
+			.shop-section__tacenter
+				a.btn.btn_primary-outer(href="#") Все видео

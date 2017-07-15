@@ -1,0 +1,44 @@
+- var cart = [{name: 'Золотые правила отношений', price: random(200, 1500), count: random(1, 10), type: 'disk'}, {name: 'Терпение, настойчивость, достижения Терпение', price: random(200, 1500), count: random(1, 10), type: 'audio'}, {name: 'Мужчины с Марса, женщины с Венеры', price: random(200, 1500), count: random(1, 10), type: 'book'}, {name: 'Значок “Лидер-Клуб”', price: random(200, 1500), count: random(1, 10), type: 'phys'}, {name: 'Значок Секреты успеха', price: random(200, 1500), count: random(1, 10), type: 'book'}]
+- function random(min, max) {
+- 	return Math.floor(Math.random() * (max - min + 1)) + min;
+- }
+- function total(price, count) {
+-	return price * count;
+- }
+
+#basket.basket.collapse
+	.g-container
+		.g-h1 Корзина
+			a.basket__close(href="#basket") &times;
+		table.basket__table
+			thead
+				tr
+					th.basket__th.basket__th_type Тип
+					th.basket__th.basket__th_name Название
+					th.basket__th.basket__th_price Цена
+					th.basket__th.basket__th_count Кол-во
+					th.basket__th Сумма
+					th.basket__th.basket__th_remove
+			tbody
+				each item in cart
+					tr
+						td.basket__td.basket__td_type
+							span.basket__ico(class="basket__ico_" + item.type)
+						td.basket__td.basket__td_name
+							a.basket__link(href="#")= item.name
+						td.basket__td.basket__td_price= item.price + ' RUB'
+						td.basket__td.basket__td_count
+							// todo Сделать что бы нельзя было вводить < 1
+							input.basket__input(type="number" value=item.count min="1")
+						td.basket__td.basket__td_total-price= total(item.price, item.count) + " RUB"
+						td.basket__td.basket__td_remove
+							a.basket__remove(href="#") &times;
+			tfoot
+				tr
+					td.basket__footer(colspan="2")
+						- var totalPrice = 0;
+							each item in cart
+								- totalPrice = totalPrice + total(item.price, item.count)
+							p= 'Сумма к оплате: ' + totalPrice + ' RUB'
+					td.basket__footer.basket__footer_aright(colspan="4")
+						button.btn.btn_success.btn_shadow.btn_lg(type="submit") Оформить заказ

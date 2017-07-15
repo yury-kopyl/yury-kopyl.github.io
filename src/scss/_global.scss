@@ -1,0 +1,53 @@
+/* GLOBAL */
+
+.g-h1 {
+	color: $color-red;
+	font-size: 44px;
+	font-weight: 300;
+	margin-bottom: 30px;
+
+	@include mq-down(xs) {
+		font-size: 30px;
+	}
+}
+
+.g-h3 {
+	color: $color-red;
+	font-weight: 300;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+
+.g-overflow-hidden {
+	overflow: hidden;
+}
+
+.g-container {
+	@include make-container();
+	@include make-container-max-widths();
+}
+
+.g-row {
+	@include make-row;
+}
+
+.g-hidden {
+	display: none;
+}
+
+.g-clearfix {
+	@include clearfix;
+}
+
+.g-btn-green {
+	background-color: $color-dark-greed;
+	border-radius: 4px;
+	color: #fff;
+
+	&:hover {
+		background-color: darken($color-dark-greed, 15);
+		color: #fff;
+	}
+}
+
+@include make-grid-columns();

@@ -1,0 +1,98 @@
+/* NAV */
+
+.nav {
+	$this: &;
+	@include clearfix;
+	position: relative;
+
+	&__button {
+		@include mq-down(lg) {
+			display: block;
+			margin-top: 13px;
+			border-radius: 4px;
+			border: 1px solid #fff;
+			color: #fff;
+			width: 42px;
+			height: 32px;
+			position: absolute;
+			padding-top: 2px;
+
+			&[aria-expanded="true"] {
+				background-color: #fff;
+				border-color: darken(#fff, 50);
+
+				#{$this}__button-hr {
+					background-color: darken(#fff, 50);
+				}
+			}
+		}
+	}
+
+	&__button-hr {
+		@include mq-down(lg) {
+			display: block;
+			width: 22px;
+			height: 2px;
+			border-radius: 1px;
+			margin-top: 5px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #fff;
+		}
+	}
+
+	&.open > .nav__menu,
+	&.open > .nav__user {
+		visibility: visible;
+	}
+
+	&__logo {
+		@include mq-down(xs) {
+			margin-left: 57px;
+		}
+
+		@include mq-between(sm, lg) {
+			left: calc(50% - 18px);
+		}
+
+		@include mq-down(lg) {
+			position: absolute;
+		}
+
+		@include mq-up(lg) {
+			float: left;
+		}
+
+		@include mq-up(xxl) {
+			margin-left: 50px;
+		}
+	}
+
+	&__menu {
+		@include mq-up(xl) {
+			float: left;
+		}
+
+		@include mq-down(lg) {
+			position: absolute;
+			top: 100%;
+			left: -15px;
+			visibility: hidden;
+			z-index: 2;
+		}
+	}
+
+	&__user {
+		@include mq-up(xl) {
+			float: right;
+		}
+
+		@include mq-down(lg) {
+			position: absolute;
+			top: calc(100% + 178px);
+			left: -15px;
+			visibility: hidden;
+			z-index: 2;
+		}
+	}
+}

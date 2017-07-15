@@ -1,0 +1,40 @@
+/* BASE */
+
+html, body {
+	font: $base-font-style $base-font-weight $base-font-size $base-font-family;
+	line-height: $base-line-height;
+	background-color: $base-bg;
+	color: $base-text-color;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+p, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	color: $base-link-color;
+	text-decoration: none;
+
+	&:hover {
+		color: $base-link-color_hover;
+	}
+}
+
+:focus {
+	outline: none;
+}

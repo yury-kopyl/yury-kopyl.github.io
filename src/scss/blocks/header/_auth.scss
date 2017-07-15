@@ -1,0 +1,261 @@
+/* AUTH */
+
+.auth {
+	margin-bottom: 30px;
+
+	@include mq-down(sm) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	@include mq-between(md, lg) {
+		width: 525px;
+	}
+
+	@include mq-up(xl) {
+		width: 940px;
+	}
+
+	&__logo {
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+
+	&__logo-img {
+		max-width: 100%;
+	}
+
+	&__text {
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 50px;
+
+		@include mq-down(sm) {
+			font-size: 14px;
+		}
+
+		@include mq-up(md) {
+			font-size: 24px;
+		}
+
+		@include mq-up(xl) {
+			line-height: 32px;
+		}
+	}
+
+	&__form {
+		color: $base-text-color;
+
+		@include mq-up(xl) {
+			display: table;
+		}
+	}
+
+	&__form-left {
+		padding: 15px 42px 30px;
+		background-color: #edf2f6;
+
+		@include mq-down(lg) {
+			border-radius: 4px 4px 0 0;
+		}
+
+		@include mq-up(xl) {
+			display: table-cell;
+			width: 50%;
+			border-radius: 4px 0 0 4px;
+		}
+	}
+
+	&__form-right {
+		padding: 15px 42px 74px;
+		background-color: #d1dfea;
+		position: relative;
+
+		@include mq-down(lg) {
+			border-radius: 0 0 4px 4px;
+		}
+
+		@include mq-up(xl) {
+			display: table-cell;
+			width: 50%;
+			border-radius: 0 4px 4px 0;
+		}
+	}
+
+	&__h3 {
+		text-align: center;
+
+		@include mq-down(sm) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__soc {
+		text-align: center;
+
+		@include mq-up(md) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__soc-fb {
+		display: inline-block;
+		@include icon('auth-fb', ':before');
+		color: $color-dark-blue;
+		font-weight: 300;
+		vertical-align: top;
+
+		@include mq-down(sm) {
+			font-size: 12px;
+		}
+
+		@include mq-up(md) {
+			font-size: 14px;
+		}
+
+		&:before {
+			display: block;
+			font-size: 50px;
+			color: #3b5999;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__soc-vk {
+		display: inline-block;
+		@include icon('auth-vk', ':before');
+		color: $color-dark-blue;
+		font-weight: 300;
+		vertical-align: top;
+
+		@include mq-down(sm) {
+			font-size: 12px;
+			margin-left: 20px;
+		}
+
+		@include mq-up(md) {
+			font-size: 14px;
+			margin-left: 35px;
+		}
+
+		&:before {
+			display: block;
+			font-size: 50px;
+			color: #44678d;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__soc-yandex {
+		display: inline-block;
+		@include icon('auth-yandex', ':before');
+		color: $color-dark-blue;
+		font-weight: 300;
+		vertical-align: top;
+
+		@include mq-down(sm) {
+			font-size: 12px;
+			margin-left: 20px;
+		}
+
+		@include mq-up(md) {
+			font-size: 14px;
+			margin-left: 35px;
+		}
+
+		&:before {
+			display: block;
+			font-size: 50px;
+			color: $color-red;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__btn-remember {
+		margin-left: 10px;
+	}
+
+	&__btn-registration {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		width: 100%;
+	}
+
+	&__img {
+		display: block;
+		margin: 0 auto;
+
+		@include mq-only(xs) {
+			width: 206px;
+		}
+
+		@include mq-up(sm) {
+			width: 260px;
+		}
+
+		@include mq-down(lg) {
+			margin-top: -30px;
+		}
+
+		@include mq-up(xl) {
+			margin-bottom: 42px;
+		}
+	}
+
+	&__reg-table {
+		display: table;
+		width: 100%;
+		margin-bottom: 15px;
+
+		@include mq-down(lg) {
+			display: none;
+		}
+	}
+
+	&__reg-cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__reg-film {
+		padding-right: 20px;
+		width: 45px;
+		@include icon('film');
+	}
+
+	&__reg-disc {
+		padding-right: 20px;
+		width: 45px;
+		@include icon('reg-disc');
+	}
+
+	&__reg-calendar {
+		padding-right: 20px;
+		width: 45px;
+		@include icon('reg-calendar');
+	}
+
+	&__label {
+		@include mq-down(xs) {
+			font-size: 16px;
+		}
+	}
+
+	.form__error.auth__error {
+		line-height: inherit;
+	}
+
+	&__error {
+		@include mq-down(xs) {
+			font-size: 16px;
+		}
+	}
+
+	&__submit-box {
+		@include mq-down(xs) {
+			text-align: center;
+		}
+	}
+}

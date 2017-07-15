@@ -1,0 +1,56 @@
+// custom fonts
+$font-family-OpenSans: 'Open Sans', sans-serif;
+$font-family-HelveticaNeueCry: 'Helvetica Neue Cry', sans-serif;
+$font-family-GothamPro: 'Gotham Pro', sans-serif;
+
+// colors
+$color-green: #8fca43;
+$color-dark-greed: #6b9e27;
+$color-red: #f05242;
+$color-blue: #1e96ff;
+$color-dark-blue: #34495c;
+$color-dark-blue_hover: #2b3c4c;
+$color-darken-blue: #293744;
+$color-gray: #718a9c;
+$color-light-pink: #edf2f6;
+
+$color-card-gray: #718a9c;
+
+// base
+$base-font-size: 18px;
+$base-line-height: 1.15;
+$base-font-family: $font-family-OpenSans;
+$base-font-style: normal;
+$base-font-weight: normal;
+
+$base-bg: $color-light-pink;
+$base-text-color: $color-dark-blue;
+$base-link-color: $color-blue;
+$base-link-color_hover: $color-dark-blue;
+
+// main variables
+$grid-breakpoints: (
+		xs: 0,
+		sm: 576px,
+		md: 768px,
+		lg: 992px,
+		xl: 1200px,
+		xxl: 1800px
+) !default;
+
+$container-max-widths: (
+		sm: 540px,
+		md: 720px,
+		lg: 960px,
+		xl: 1140px,
+		xxl: 1700px
+) !default;
+
+// Number of columns in the grid.
+$grid-columns: 12 !default;
+
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 30px !default;
+
+// Header navigation
+$nav-height: 58px;

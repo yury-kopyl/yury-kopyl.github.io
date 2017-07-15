@@ -1,0 +1,38 @@
+/* CITY */
+
+// todo Вывести иконку
+
+.city {
+	@include mq-down(md) {
+		text-align: right;
+	}
+
+	&__link {
+		color: #fff;
+		font-size: 14px;
+		display: inline-block;
+		line-height: 58px;
+		padding-left: 8px;
+		padding-right: 8px;
+
+		&:hover {
+			color: darken(#fff, 15);
+		}
+	}
+
+	&__ico {
+		margin-right: 5px;
+		@include icon('location', ':after');
+
+		&:after {
+			font-size: 18px;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+	&__name {
+		border-bottom: 1px dashed;
+		padding-bottom: 2px;
+	}
+}

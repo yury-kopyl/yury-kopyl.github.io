@@ -1,0 +1,55 @@
+/* FOOTER */
+
+.footer {
+	font-size: 14px;
+	font-weight: 300;
+	padding-top: 50px;
+
+	@include mq-up(md) {
+		padding-bottom: 20px;
+	}
+
+	@include mq-up(lg) {
+		padding-bottom: 50px;
+	}
+
+	&__list {
+		@include mq-down(md) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__separator {
+		@include mq-up(lg) {
+			display: none;
+		}
+	}
+
+	&__item {
+		line-height: 40px;
+	}
+
+	&__link {
+		& + & {
+			margin-left: 10px;
+		}
+	}
+
+	&__ico {
+		display: inline-block;
+		font-size: 36px;
+		color: #4a6ea9;
+
+		&:hover {
+			color: $color-dark-blue;
+		}
+
+		&_fb {
+			@include icon('soc-fb');
+		}
+
+		&_vk {
+			@include icon('soc-vk');
+		}
+	}
+}

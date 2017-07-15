@@ -1,0 +1,65 @@
+extends _layout/_template
+
+block content
+	.slider
+		- var data = owlBanner;
+		.js-slick-slider
+			each item in data
+				div
+					include _layout/_slider
+		- var data = owlMiniBanner;
+		.slider_mini
+			.js-slick-slider_mini
+				each item in data
+					div
+						include _layout/_slider_mini
+
+	.section.main-section.main-section_bg
+		.g-container
+			.g-row
+				.g-col-lg-6.g-col-xl-5.g-col-xxl-4
+					.g-row
+						.g-h1.g-col-12.g-col-md-5.g-col-lg-12 Diamond Alliance ваш путь к успеху
+						.g-col-12.g-col-md-7.g-col-lg-12
+							p Международная обучающая система, концентрирующая опыт успешных Независимых предпринимателей Amway высших уровней квалификации.Система создана в 2002 году. Знания и
+								| пример лидеров Diamond Alliance активно используются для обучения и совершенствования как новых, так и опытных НПА.
+							a.btn.btn_primary-outer.main-section__btn_mt(href="#") Подробнее
+				.g-col-lg-6.g-col-xl-5.g-col-xxl-4.main-section__right
+					.g-row
+						.g-col-12.g-col-md-4.main-section__col4
+							.g-row
+								.g-col-3.g-col-md-12.main-section__ico.main-section__ico_sound
+								.g-col-2.g-col-md-12.main-section__count 30
+								.g-col-7.g-col-md-12.main-section__right-text аудиозаписей с секретами построения счасливой жизни
+						.g-col-12.g-col-md-4.main-section__col4
+							.g-row
+								.g-col-3.g-col-md-12.main-section__ico.main-section__ico_film
+								.g-col-2.g-col-md-12.main-section__count 350
+								.g-col-7.g-col-md-12.main-section__right-text видео по мотивации, бизнесу и другое
+						.g-col-12.g-col-md-4.main-section__col4
+							.g-row
+								.g-col-3.g-col-md-12.main-section__ico.main-section__ico_peoples
+								.g-col-2.g-col-md-12.main-section__count 50
+								.g-col-7.g-col-md-12.main-section__right-text известных мировых лидеров
+
+	.section.main-section
+		.g-container
+			.g-h1 Видеокурсы
+			.main-section__title.main-section__title_with-btn Свежие и актуальные видеоматериалы
+				a.btn.btn_primary-outer.main-section__btn(href="#") Все видео
+			- var data = main_new;
+			.carousel.js-slick-carousel
+				each item in data
+					div
+						include _layout/_card
+
+	.section.main-section.main-section_bg
+		.g-container
+			.g-h1 Аудиосеминары
+			.main-section__title.main-section__title_with-btn Аудиозаписи последних семинаров
+				a.btn.btn_primary-outer.main-section__btn(href="#") Все товары магазина
+			- var data = main_shop;
+			.carousel.js-slick-carousel
+				each item in data
+					div
+						include _layout/_card

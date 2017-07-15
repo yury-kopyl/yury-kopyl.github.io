@@ -1,0 +1,101 @@
+#auth.modal.fade(role="dialog" aria-labelledby="authLabel")
+	.modal__header.modal__header_hidden
+	.modal__dialog.auth(role="document")
+		.auth__logo
+			img.auth__logo-img(src="img/logo_text.png")
+		.auth__text Содержание данного сайта проверено и одобрено Amway в соответствии со
+			| <br>Стандартами качества материалов построения бизнеса. Сайт предназначен
+			| <br>только для российских и украинских Независимых Предпринимателей Амвэй,
+			| <br>сотрудничающих с обучающей системой “ Альянс Бриллиантов”.
+		form.form.auth__form
+			.auth__form-left
+				.g-h3.auth__h3 Авторизация
+				.auth__soc
+					a.auth__soc-fb(href="#") Facebook
+					a.auth__soc-vk(href="#") VKontakte
+					a.auth__soc-yandex(href="#") Яндекс
+				.g-h3.auth__h3 или
+				input.form__input(type="text" name="name" placeholder="Имя пользователя")
+				input.form__input(type="password" name="password" placeholder="Пароль")
+				label.form__label.auth__label
+					input.form__checkbox(type="checkbox" checked)
+					span.form__checkbox-custom
+					| Запомнить пароль
+				.form__error.auth__error Логин или пароль введены неверно.
+				.form__submit-box.auth__submit-box
+					button.btn.btn_primary.btn_shadow(type="submit") Войти
+					a.btn.btn__link.auth__btn-remember(href="#") Напомнить пароль
+			.auth__form-right
+				.g-h3.auth__h3 Регистрация
+				div
+					img.auth__img(src="img/amway.svg")
+				.auth__reg-table
+					.auth__reg-cell.auth__reg-film
+					.auth__reg-cell Более 300 видео от известных бизнесменов, ораторов и психологов
+				.auth__reg-table
+					.auth__reg-cell.auth__reg-disc
+					.auth__reg-cell Диски с обучающими материалами
+				.auth__reg-table
+					.auth__reg-cell.auth__reg-calendar
+					.auth__reg-cell Сотни мероприятий на территории всего СНГ
+				.auth__btn-registration.form__submit-box_center
+					a.btn.btn_success.btn_shadow(href="#") Зарегистрироваться
+
+//-.register-pop-authorization
+	.register-main-content
+		.register-head-part
+			img(src='../img/da_lined_logo.png', alt='DA_lined_logo')
+			p
+				| Содержание данного сайта проверено и одобрено Amway в соответствии со
+				| Стандартами качества материалов построения бизнеса. Сайт предназначен
+				| только для российских и украинских Независимых Предпринимателей Амвэй,
+				| сотрудничающих с обучающей системой “ Альянс Бриллиантов”.
+		.register-center-part
+			// <div class="row">
+			div
+				.row
+					.col-md-6.no-padding
+						.register-item.form-bg
+							h3 Авторизация
+							.social-circle
+								a(href='')
+									.social-circle-item.circle-fb
+									span Facebook
+								a(href='')
+									.social-circle-item.circle-vk
+									span VKontakte
+								a(href='')
+									.social-circle-item.circle-ya
+									span Яндекс
+							h3 или
+							form
+								.form-group
+									input#exampleInputEmail1.form-control.auth-pop(type='email', placeholder='Имя пользователя')
+								.form-group
+									input#exampleInputPassword1.form-control.auth-pop(type='password', placeholder='Пароль')
+								.checkbox.checkbox-green.password-check
+									input#checkbox1.styled(type='checkbox')
+									label(for='checkbox1')
+										| Запомнить пароль
+								.alert-section
+							.enter-part
+								.enter-part-item
+									button.btn.btn-primary.btn-block.btn-enter(type='submit') Войти
+								.enter-part-item
+									a(href='#', onclick='remindPop();return false') Напомнить пароль
+					.col-md-6.no-padding
+						a.close(onclick="registerPop();return false" class="city-btn city-close icon-close-round icon-xl")
+						.register-item.registr-bg
+							h3 Регистрация
+							img(src='../img/reg-amway.png', alt='Amway_logo')
+							.review
+								.review-img
+								p Более 300 видео от известных бизнесменов, ораторов и психологов
+							.review
+								.review-img.disks
+								p Диски с обучающими материалами
+							.review
+								.review-img.events
+								p Сотни мероприятий на территории всего СНГ
+							button.btn.btn-bulk.btn-authorization.btn-block.amway-register-btn(type='submit') Зарегистрироваться
+			// </div>

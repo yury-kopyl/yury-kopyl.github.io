@@ -1,0 +1,79 @@
+/* PROMO */
+
+@import "../../icons/sprite";
+
+.promo {
+	padding: 58px 0 58px;
+	background: url("../img/promo__bg.jpg") 70% 170px / cover no-repeat fixed;
+
+	@include mq-down(md) {
+		background-position: 57% 90px;
+	}
+
+	&__logo {
+		@include sprite($promo-logo);
+
+		@include mq-down(md) {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@include mq-up(lg) {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	&__header {
+		font-size: 20px;
+		color: #fff;
+
+		@include mq-down(xs) {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+
+		@include mq-down(md) {
+			text-align: center;
+			margin-top: 45px;
+			margin-bottom: 45px;
+		}
+
+		@include mq-up(lg) {
+			margin-left: 40px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	&__links {
+		@include mq-down(md) {
+			text-align: center;
+		}
+
+		@include mq-up(lg) {
+			line-height: 104px;
+			text-align: right;
+		}
+	}
+
+	&__google {
+		@include sprite($google-play);
+		display: inline-block;
+		vertical-align: middle;
+
+		@include mq-down(xs) {
+			margin-bottom: 20px;
+		}
+
+		@include mq-up(sm) {
+			margin-right: 20px;
+		}
+	}
+
+	&__apple {
+		@include sprite($app-store);
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

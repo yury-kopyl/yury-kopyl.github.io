@@ -1,0 +1,110 @@
+/* FORM */
+
+.form {
+	$this: &;
+
+	&__input,
+	&__textarea {
+		background-color: #fff;
+		border-radius: 4px;
+		border: none;
+		width: 100%;
+		color: $color-dark-blue;
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box!important;
+
+		&:focus {
+			box-shadow: inset 0 0 0 1px $color-blue;
+		}
+	}
+
+	&__input {
+		height: 48px;
+
+		& + &,
+		& + #{$this}__textarea,
+		& + #{$this}__label,
+		& + #{$this}__error {
+			margin-top: 20px;
+		}
+	}
+
+	&__label {
+		display: inline-block;
+		line-height: 48px;
+
+		& + &,
+		& + #{$this}__textarea,
+		& + #{$this}__input,
+		& + #{$this}__error {
+			margin-top: 20px;
+		}
+	}
+
+	&__checkbox {
+		display: none;
+	}
+
+	&__checkbox-custom {
+		width: 27px;
+		height: 27px;
+		display: inline-block;
+		margin-right: 15px;
+		vertical-align: -7px;
+		border-radius: 3px;
+		background-color: #fff;
+		cursor: pointer;
+		font-family: 'Arial', sans-serif;
+		font-size: 40px;
+		color: $color-green;
+		overflow: hidden;
+
+		#{$this}__checkbox:checked + & {
+			@include icon('success', ':before');
+
+			&:before {
+				display: block;
+				line-height: 27px;
+				text-indent: -6px;
+			}
+		}
+	}
+
+	&__textarea {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		resize: none;
+
+		& + &,
+		& + #{$this}__input,
+		& + #{$this}__label,
+		& + #{$this}__error {
+			margin-top: 20px;
+		}
+	}
+
+	&__submit-box {
+		margin-top: 20px;
+
+		&_center {
+			text-align: center;
+		}
+
+		&_right {
+			text-align: right;
+		}
+	}
+
+	&__error {
+		color: $color-red;
+		line-height: 48px;
+
+		& + &,
+		& + #{$this}__textarea,
+		& + #{$this}__label,
+		& + #{$this}__input {
+			margin-top: 20px;
+		}
+	}
+}

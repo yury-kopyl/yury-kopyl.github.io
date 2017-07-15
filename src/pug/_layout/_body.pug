@@ -1,0 +1,26 @@
+body
+	include _header
+
+	block content
+
+	include _footer
+
+	include _choose-region
+
+	include _search
+
+	include _callback
+
+	include _auth
+
+	// jQuery (necessary for Bootstrap's JavaScript plugins)
+	script(src="js/lib/jquery-3.2.1.min.js")
+	script(src="js/lib/bootstrap.min.js")
+	script(src="js/lib/slick.min.js")
+	script(src="js/lib/select2.min.js")
+	//- script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js")
+
+	// Include all compiled plugins (below), or include individual files as needed
+	//- script(src="js/object-fit-images/ofi.min.js")
+	//- script(src="js/object-fit-images/picturefill.min.js")
+	script(src="js/script.js")

@@ -1,0 +1,70 @@
+/* ALERT-REGION */
+
+.alert-region {
+	background-color: $color-darken-blue;
+	color: #fff;
+	font-size: 14px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+
+	@include mq-down(sm) {
+		height: 100vh;
+		z-index: 9999;
+		padding: 30px;
+	}
+
+	&__cloud {
+		position: relative;
+		line-height: 19px;
+		border-radius: 6px;
+
+		@include mq-down(sm) {
+			background-color: $color-dark-blue;
+			padding: 14px;
+		}
+
+		@include mq-up(md) {
+			display: inline-block;
+			margin: 15px;
+			background-color: $color-gray;
+			padding: 22px;
+		}
+
+		&:after {
+			content: "";
+			border-style: solid solid none;
+			border-width: 10px;
+			bottom: -10px;
+			position: absolute;
+			@include mq-down(sm) {
+				left: calc(50% - 10px);
+				border-color: $color-dark-blue transparent;
+			}
+
+			@include mq-up(md) {
+				left: 60px;
+				border-color: $color-gray transparent;
+			}
+		}
+	}
+
+	&__link {
+		color: #fff;
+		padding-bottom: 2px;
+		border-bottom: 1px dashed;
+		text-indent: -10px;
+		display: inline-block;
+		margin-left: 25px;
+
+		&:hover {
+			color: darken(#fff, 15);
+		}
+
+		@include mq-down(sm) {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}

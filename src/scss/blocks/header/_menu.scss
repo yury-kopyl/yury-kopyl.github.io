@@ -1,0 +1,65 @@
+/* MENU */
+
+.menu {
+	@include clearfix;
+
+	@include mq-down(sm) {
+		width: calc(100% + 30px);
+	}
+
+	@include mq-between(md, lg) {
+		width: 320px;
+	}
+
+	@include mq-down(lg) {
+		padding-bottom: 10px;
+		background-color: $color-darken-blue;
+		font-size: 16px;
+	}
+
+	@include mq-only(xl) {
+		font-size: 14px;
+	}
+
+	@include mq-up(xxl) {
+		font-size: 16px;
+	}
+
+	&__item {
+		@include mq-up(xl) {
+			float: left;
+		}
+	}
+
+	&__link {
+		color: #fff;
+		display: block;
+
+		&_active {
+			background-color: $color-dark-blue_hover;
+		}
+
+		@include mq-down(lg) {
+			padding-left: 55px;
+			padding-right: 30px;
+			line-height: 42px;
+		}
+
+		@include mq-up(xl) {
+			line-height: $nav-height;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		&:hover {
+			color: darken(#fff, 15);
+		}
+	}
+}
+
+@include mq-down(sm) {
+	.affix .menu {
+		width: 100%;
+		left: 0;
+	}
+}

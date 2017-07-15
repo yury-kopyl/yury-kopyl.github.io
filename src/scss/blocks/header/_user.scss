@@ -1,0 +1,197 @@
+/* USER */
+
+.user {
+	font-size: 16px;
+
+	@include mq-down(sm) {
+		width: calc(100% + 30px);
+	}
+
+	@include mq-between(md, lg) {
+		width: 320px;
+	}
+
+	@include mq-down(lg) {
+		border-top: 1px solid $color-dark-blue;
+		padding-bottom: 10px;
+		background-color: $color-darken-blue;
+	}
+
+	&__item {
+		line-height: $nav-height;
+
+		@include mq-up(xl) {
+			float: left;
+		}
+
+		&_person {
+			position: relative;
+
+			@include mq-down(lg) {
+				padding-top: 5px;
+				margin-bottom: 5px;
+				border-top: 1px solid #34495c;
+			}
+		}
+
+		&_config {
+			@include mq-down(lg) {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+
+			@include mq-up(xl) {
+				display: none;
+			}
+		}
+	}
+
+	&__search,
+	&__callback,
+	&__basket {
+		display: inline-block;
+		width: 54px;
+		height: $nav-height;
+		vertical-align: top;
+		transition: top .35s ease 0s;
+		color: #fff;
+
+		&:hover {
+			color: darken(#fff, 15);
+		}
+
+		&:after {
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+			font-size: 22px;
+		}
+
+		@include mq-down(sm) {
+			position: absolute;
+			top: -237px;
+		}
+
+		@include mq-between(md, lg) {
+			top: 96px;
+			position: fixed;
+		}
+
+		@include mq-down(lg) {
+			visibility: visible;
+		}
+	}
+
+	&__search {
+		right: 108px;
+		@include icon('search', ':after');
+	}
+
+	&__callback {
+		right: 54px;
+		@include icon('callback', ':after');
+	}
+
+	&__basket {
+		right: 0;
+		@include icon('cart', ':after');
+	}
+
+	&__register {
+		@extend %white-link;
+
+		@include mq-down(lg) {
+			display: block;
+			padding-left: 55px;
+			padding-right: 30px;
+			line-height: 42px;
+			margin-bottom: 10px;
+		}
+
+		@include mq-up(xl) {
+			line-height: $nav-height;
+			display: inline-block;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	&__auth {
+		font-size: 14px;
+		display: inline-block;
+		height: 34px;
+		line-height: 32px;
+		vertical-align: middle;
+		border: 1px solid;
+		border-radius: 4px;
+		padding-left: 24px;
+		padding-right: 24px;
+		@extend %white-link;
+
+		@include mq-down(lg) {
+			margin-left: 55px;
+		}
+	}
+
+	&__person {
+		@extend %white-link;
+
+		@include mq-down(lg) {
+			display: block;
+			padding-left: 16px;
+			padding-right: 30px;
+			line-height: 42px;
+		}
+
+		@include mq-up(xl) {
+			display: inline-block;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		&[aria-expanded="true"] {
+			background-color: $color-dark-blue_hover;
+		}
+	}
+
+	&__person-ico {
+		@include icon('user', ':after');
+
+		&:after {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 24px;
+			margin-right: 15px;
+		}
+	}
+
+	&__config-ico {
+		@include icon('config', ':after');
+
+		&:after {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 24px;
+			margin-right: 15px;
+		}
+	}
+}
+
+@include mq-down(sm) {
+	.affix .user {
+		width: 100%;
+		left: 0;
+	}
+}
+
+@include mq-up(md) {
+	.alert-region:not(.in) + .header {
+		.user {
+			&__search,
+			&__callback,
+			&__basket {
+				top: 0;
+			}
+		}
+	}
+}

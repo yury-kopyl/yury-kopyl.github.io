@@ -1,0 +1,40 @@
+extends _layout/_template
+
+block content
+	.g-container.section.registration
+		.g-h1 Регистрация
+		p Регистрация на сайте откроет для вас доступ к десяткам полезных видео-материалов, и массе мероприятий по всему СНГ.
+		form.form
+			.g-row
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="text" name="name" value="" placeholder="Имя")
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="text" name="secondname" value="" placeholder="Фамилия")
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="email" name="email" value="" placeholder="Эл. Почта")
+				.g-col-md-12.registration__separator
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="password" name="password" value="" placeholder="Пароль")
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="password" name="repassword" value="" placeholder="Повторите пароль")
+			.g-h3.registration__h3 Данные Amway
+			.g-row
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="text" name="mwnumber" value="" placeholder="Введите Ваш номер Amway")
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="text" name="secondname_br" value="" placeholder="Фамилия Бриллиантового НПА")
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="text" name="secondname_iz" value="" placeholder="Фамилия Изумрудного НПА")
+				.g-col-12.g-col-md-6.g-col-xl-4
+					input.form__input(type="text" name="secondname_pl" value="" placeholder="Фамилия Платинового НПА")
+				.g-col-12.g-col-xl-8.registration__footer
+					div.form__label.registration__label
+						label
+							input.form__checkbox(type="checkbox" checked)
+							span.form__checkbox-custom
+						|Вы подтверждаете, что являетесь Независимым Предпринимателем Амвэй,
+						|сотрудничающим с обучающей системой “Альянс Бриллиантов” и принимаете
+						|условия&nbsp;
+						a(href="#") пользовательского соглашения
+				.g-col-12.g-col-xl-4.registration__footer.registration__footer_right.form__submit-box_right
+					a.btn.btn_success.btn_shadow(href="#") Зарегистрироваться

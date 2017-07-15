@@ -1,0 +1,58 @@
+/* SECTION-404 */
+
+.section-404 {
+
+	&__container {
+		position: relative;
+		float: left;
+
+		@include mq-up(md) {
+			width: calc(100% - 290px);
+		}
+	}
+
+	&__header {
+		font-size: 140px;
+		color: #78899a;
+		margin-bottom: 50px;
+
+		@include mq-down(xs) {
+			text-align: center;
+		}
+	}
+
+	&__ico {
+		@include icon('attention');
+		font-size: 112px;
+		vertical-align: bottom;
+
+		@include mq-down(xs) {
+			display: block;
+		}
+
+		@include mq-up(sm) {
+			margin-right: 60px;
+		}
+	}
+
+	&__img {
+		width: 290px;
+		float: left;
+
+		@include mq-down(sm) {
+			display: none;
+		}
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		margin-bottom: 15px;
+
+		&:last-of-type {
+			margin-bottom: 25px;
+		}
+	}
+}

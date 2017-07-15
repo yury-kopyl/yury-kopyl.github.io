@@ -1,0 +1,80 @@
+/* NORMALIZE */
+/* FONTS */
+/* BASE */
+/* GLOBAL */
+/* ALERT-REGION */
+/* HEADER */
+/* LOGO */
+/* NAV */
+/* BANNER */
+/* FOOTER */
+/* SOCIAL */
+/* COPYRIGHT */
+/*===================================================================================================================*/
+@import "variables";
+@import "functions/breakpoints";
+@import "mixins";
+@import "mixins/breakpoints";
+@import "icons/i-lang";
+@import "icons/_iconfont";
+@import "mixins/grid";
+
+@import "normalize";
+@import "fonts";
+@import "base";
+@import "global";
+
+// GLOBAL BLOCKS
+@import "blocks/btn";
+@import "blocks/form";
+@import "blocks/slider";
+@import "blocks/carousel";
+@import "blocks/card";
+@import "blocks/card-col";
+@import "blocks/section";
+
+// HEADER BLOCKS
+@import "blocks/header/alert-region";
+@import "blocks/header/header";
+@import "blocks/header/lang";
+@import "blocks/header/lang-list";
+@import "blocks/header/city";
+@import "blocks/header/logo";
+@import "blocks/header/nav";
+@import "blocks/header/menu";
+@import "blocks/header/user";
+@import "blocks/header/badge";
+@import "blocks/header/person";
+@import "blocks/header/callback";
+@import "blocks/header/basket";
+@import "blocks/header/auth";
+
+// 404 BLOCKS
+@import "blocks/404/section-404";
+
+// FOOTER BLOCKS
+@import "blocks/footer/promo";
+@import "blocks/footer/footer";
+@import "blocks/footer/copyright";
+
+// REGISTRATION
+@import "blocks/registration/registration";
+
+// MAIN BLOCKS
+@import "blocks/main/main-section";
+
+// SHOP BLOCKS
+@import "blocks/shop/shop-slider";
+@import "blocks/shop/shop-category";
+@import "blocks/shop/shop-section";
+@import "blocks/shop/shop-inputs";
+
+// COMPONENTS
+@import "components/bootstrap/collapse";
+@import "components/bootstrap/dropdown";
+@import "components/bootstrap/dropdown-menu";
+@import "components/bootstrap/caret";
+@import "components/bootstrap/modal";
+@import "components/slick/slick";
+@import "components/slick/slick-theme";
+@import "components/select2/select2";

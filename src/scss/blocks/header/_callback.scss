@@ -1,0 +1,45 @@
+/* CALLBACK */
+
+.callback {
+	display: table;
+	width: 100%;
+	height: calc(100vh - 30px);
+
+	&__cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__form {
+		max-width: 470px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: $color-light-pink;
+		padding: 40px;
+		border-radius: 4px;
+
+		@include mq-down(xs) {
+			position: relative;
+		}
+	}
+
+	&__h1 {
+		@include mq-down(xs) {
+			font-size: 17px;
+		}
+	}
+
+	&__close {
+		float: right;
+		color: darken($color-gray, 10);
+		font-size: 34px;
+
+		@include mq-down(xs) {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 39px;
+			text-align: center;
+		}
+	}
+}

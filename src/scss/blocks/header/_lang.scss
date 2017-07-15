@@ -1,0 +1,42 @@
+/* LANG */
+
+.lang {
+	font-size: 14px;
+	display: inline-block;
+
+	&.open {
+		background-color: $color-dark-blue_hover;
+	}
+
+	&__link-active,
+	&__link {
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&__link-active {
+		padding: 18px 15px;
+		display: inline-block;
+		line-height: 22px;
+		height: 58px;
+	}
+
+	&__link {
+		background-color: $color-dark-blue_hover;
+		display: block;
+		padding: 3px 15px;
+		line-height: 30px;
+		white-space: nowrap;
+	}
+
+	&__ico {
+		margin-right: 12px;
+	}
+
+	&__name {
+		vertical-align: middle;
+	}
+}

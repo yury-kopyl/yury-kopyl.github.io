@@ -1,0 +1,44 @@
+/* REGISTRATION */
+
+.registration {
+	.form__input {
+		margin-bottom: 20px;
+	}
+
+	&__h3 {
+		@include mq-down(sm) {
+			margin-top: 30px;
+		}
+
+		@include mq-up(md) {
+			margin-top: 60px;
+		}
+	}
+
+	&__label label {
+		text-indent: 0;
+		display: inline-block;
+	}
+
+	.form__label.registration__label {
+		line-height: inherit;
+		padding-left: 42px;
+		text-indent: -42px;
+	}
+
+	&__footer {
+		margin-top: 30px;
+
+		&_right {
+			@include mq-down(sm) {
+				text-align: center;
+			}
+		}
+	}
+
+	&__separator {
+		@include mq-up(xl) {
+			display: none;
+		}
+	}
+}
